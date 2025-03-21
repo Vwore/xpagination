@@ -47,14 +47,16 @@ function App() {
           <th className="head-cell">Email</th>
           <th className="head-cell">Role</th>
         </tr>
-        {filterEmployee.map((value) => (
-          <tr>
-            <td className="row-cell">{value.id}</td>
-            <td className="row-cell">{value.name}</td>
-            <td className="row-cell">{value.email}</td>
-            <td className="row-cell">{value.role}</td>
-          </tr>
-        ))}
+        <tbody>
+          {filterEmployee.map((value) => (
+            <tr>
+              <td className="row-cell">{value.id}</td>
+              <td className="row-cell">{value.name}</td>
+              <td className="row-cell">{value.email}</td>
+              <td className="row-cell">{value.role}</td>
+            </tr>
+          ))}
+        </tbody>
       </table>
       <div className="pagination">
         <button
